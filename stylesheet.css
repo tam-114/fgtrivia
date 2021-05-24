@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Contemporary Brush";
+    src: url("https://db.onlinewebfonts.com/t/8725ecbcc302435e92b5dd048ac86eb0.eot"); /* IE9*/
+    src: url("https://db.onlinewebfonts.com/t/8725ecbcc302435e92b5dd048ac86eb0.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/8725ecbcc302435e92b5dd048ac86eb0.woff2") format("woff2"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/8725ecbcc302435e92b5dd048ac86eb0.woff") format("woff"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/8725ecbcc302435e92b5dd048ac86eb0.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/8725ecbcc302435e92b5dd048ac86eb0.svg#Contemporary Brush") format("svg"); /* iOS 4.1- */
+}
+
+body{
+	font-size: 22px;
+	/*font-family: 'Work Sans', sans-serif;*/
+  background-color: #ffb366; /*light orange bg*/
+  font-family: "Contemporary Brush";
+	color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+  /*background-color: #f8f6f0;*/
+}
+h1{
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #444;
+  color: #fff;
+}
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+button{
+  font-family: "Contemporary Brush";
+	font-size: 20px;
+	background-color: #ffb366;
+	color: #333;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+button:hover{
+	background-color: #ffa64d;
+}
+
+h4 {
+  text-align: center;
+  color: #000033;
+  font-size: 25px;
+}
+
+a {
+  color: #279;
+}
+
+footer {
+  text-align: center;
+  color: #000033;
+  font-size: 20px;
+}
+
+.quiz-border {
+  border: 2px #000033 solid;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 1px;
+  background-color: #279;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 22px;
+}

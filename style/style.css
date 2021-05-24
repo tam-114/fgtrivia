@@ -1,0 +1,187 @@
+/*imports normalize.css file*/
+/*@import "normalize.css";*/
+
+/*see line 15 in index.html for class in use*/
+.logo-img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding-top: 15px;
+  	width: 75%;
+}
+
+/*font-face for: Contemporary Brush font in use*/
+@font-face {
+	font-family: "Contemporary Brush";
+    src: url("https://db.onlinewebfonts.com/t/8725ecbcc302435e92b5dd048ac86eb0.eot"); /* IE9*/
+    src: url("https://db.onlinewebfonts.com/t/8725ecbcc302435e92b5dd048ac86eb0.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/8725ecbcc302435e92b5dd048ac86eb0.woff2") format("woff2"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/8725ecbcc302435e92b5dd048ac86eb0.woff") format("woff"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/8725ecbcc302435e92b5dd048ac86eb0.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/8725ecbcc302435e92b5dd048ac86eb0.svg#Contemporary Brush") format("svg"); /* iOS 4.1- */
+}
+
+/*see line 13 for body element in use*/
+body {
+	background-color: #ffb366; /*light orange bg*/
+	font-family: "Contemporary Brush"; /*see line 14 in style.css for src*/
+}
+
+ /*Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 899px) {/*max-width < */
+	  .grid-quiz {/*see line 23 in index.html*/
+	    display: grid;
+	    grid-template-columns: auto; /*becomes one grid*/
+	    justify-content: center;
+	    background: #000033; /*bg dark blue*/
+	    width: auto;
+	    padding: 10px 10px;
+	    margin: 10px 10px;
+	}
+
+	/*see line 25 44 50 69 75 93 99 118 124 143 in index.html for class used*/
+	.grid-item {
+    	background-color: #33cccc; /*bg teal*/
+    	padding: 10px 10px;
+    	margin: 10px 10px;
+	}
+
+}
+
+/*Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 900px) {/*min-width > */
+	/*see line 27 52 77 101 126 in index.html for tag use*/
+	h2 {
+		color: #ffb366; /*light orange color*/
+	}
+	/*see lines 29 54 79 103 128 in index.html for tag use*/
+	h3 {
+		color: #ffb366; /*light orange color*/
+	}
+	/*see line 23 in index.html for class use*/
+	.grid-quiz {
+	    display: grid;
+	    grid-template-columns: auto auto; /*grid 2 col*/
+	    justify-content: center;
+	    background-color: #000033; /*bg black color of entire grid */
+	    width: auto;
+	    padding: 10px 10px;
+	    margin: 10px 10px;
+	}
+
+	/*see line 25 44 50 69 75 93 99 118 124 143 in index.html for class used*/
+	.grid-item {
+    	background-color: #66b3ff; /*bg light blue color for grid items */
+    	border: 5px solid #ff8533; /*border orange*/
+    	padding: 10px 10px;
+    	margin: 10px 10px;
+	}
+
+}
+
+/*see lines 27 52 77 101 126 in index.html for tag use*/
+h2 {
+	padding-left: 15px;
+	color: #000033; /*dark blue font*/
+	text-align: left;
+	font-size: 45px;
+}
+
+/*see lines 29 54 79 103 128 in index.html for tag use*/
+h3 {
+	padding-left: 15px;
+	color: #000033;
+	text-align: left;
+	font-size: 30px;
+}
+
+/*see line 17 for h4 tag use*/
+h4 {
+	text-align: center;
+	color: #000033;
+	font-size: 30px;
+}
+
+/*see line 19 in index.html for tag use*/
+h5 {
+	text-align: center;
+	font-size: 20px;
+	color: #000033;
+}
+
+/*see line 150 for tag use*/
+p {
+	text-align: center;
+	color: #000033;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
+
+
+/*see lines 46 71 95 120 145 in index.html for class used
+.quiz-img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	margin: 2px 2px;
+	padding-left: 0px;
+	padding-right: 2px;
+	position: relative;
+}
+
+/*see lines 33-39, 58-64, 82-88, 107-113, 132-138 in index.html for class used
+.choice {
+  border: none;
+  color: #000033;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Contemporary Brush";
+  cursor: pointer;
+}
+
+
+/*see lines 31 56 80 105 130 in index.html for ol element used
+ol {
+	list-style:none;
+	justify-content: center;
+	padding: 10px 10px;
+	margin: auto;
+}
+/*see lines 33-39, 81-88, 107-113, 132-138 in index.html for li element used
+li {
+	text-decoration: none;
+	justify-content: center;
+	display: block;
+}
+/*see lines 33-39, 81-88, 107-113, 132-138 in index.html for button tag used*/
+button {
+	background-color: #ffb366; /*bg color matches body bg color*/
+}
+
+/*see lines 37 64 84 111 134 in index.html for right class use
+button.right:focus {
+	background-color: green;
+}
+/*see lines 33-39, 81-88, 107-113, 132-138 in index.html for li element used
+button.wrong:focus {
+	background-color: red;
+}*/
