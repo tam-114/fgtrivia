@@ -155,6 +155,26 @@
         d: "Never officially dated"
       },
       correctAnswer: "a"
+    },
+    {
+      question: "What is Quagmire's job?",
+      answers: {
+        a: "Police Officer",
+        b: "Deli shop owner",
+        c: "Train conductor",
+        d: "Pilot"
+      },
+      correctAnswer: "d"
+    },
+    {
+      question: "What was the requirement for Peter to be able to ride the rollercoaster? (S10:E7)",
+      answers: {
+        a: "Cannot look hilarious on a miniature scooter",
+        b: "Cannot be over the weight limit",
+        c: "Cannot bring beer on the ride",
+        d: "Cannot wear green pants"
+      },
+        correctAnswer: "a"
     }
   ];
 
