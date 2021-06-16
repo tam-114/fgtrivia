@@ -196,4 +196,9 @@
   submitButton.addEventListener('click', showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
+
+  //On mobile
+  submitButton.addEventListener("touchstart", showResults);
+  previousButton.addEventListener("touchstart", showPreviousSlide);
+  nextButton.addEventListener("touchstart", showNextSlide);
 })();
