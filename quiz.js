@@ -194,8 +194,12 @@
 
   //On mobile event listeners
   //if (window.screen.width <= 480) {
-    
-  if(navigator.userAgent.match(/Android/i)){
+  // /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+  //or
+  //navigator.userAgent.match(/Android/i)
+
+  //testing for any phone
+  if(/Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
     submitButton.addEventListener("touchstart", showResults);
     previousButton.addEventListener("touchstart", showPreviousSlide);
     nextButton.addEventListener("touchstart", showNextSlide);
