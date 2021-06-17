@@ -193,14 +193,18 @@
   showSlide(currentSlide);
 
   //On mobile event listeners
-  if (screen.width <= 480) {
+  //if (window.screen.width <= 480) {
+    
+  if(navigator.userAgent.match(/Android/i)){
     submitButton.addEventListener("touchstart", showResults);
     previousButton.addEventListener("touchstart", showPreviousSlide);
     nextButton.addEventListener("touchstart", showNextSlide);
+  } else {
+    submitButton.addEventListener("click", showResults);
+    previousButton.addEventListener("click", showPreviousSlide);
+    nextButton.addEventListener("click", showNextSlide);
   }
 
   // Event listeners
-  submitButton.addEventListener("click", showResults);
-  previousButton.addEventListener("click", showPreviousSlide);
-  nextButton.addEventListener("click", showNextSlide);
+  
 })();
