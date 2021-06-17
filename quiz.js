@@ -193,13 +193,13 @@
   showSlide(currentSlide);
 
   //On mobile event listeners
-  //if (window.screen.width <= 480) {
+  //testing for any phone
   // /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-  //or
+  //or for 1 device (currently)
   //navigator.userAgent.match(/Android/i)
 
-  //testing for any phone
-  if(/Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+
+  if(navigator.userAgent.match(/Android/i) ){
     submitButton.addEventListener("touchstart", showResults);
     previousButton.addEventListener("touchstart", showPreviousSlide);
     nextButton.addEventListener("touchstart", showNextSlide);
