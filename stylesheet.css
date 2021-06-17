@@ -8,10 +8,13 @@
     url("https://db.onlinewebfonts.com/t/8725ecbcc302435e92b5dd048ac86eb0.svg#Contemporary Brush") format("svg"); /* iOS 4.1- */
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .fg-title {
     width: 100%;
     height: 10vh;
+  }
+  .mobile-view {
+    padding-top: 70px;
   }
 }
 
