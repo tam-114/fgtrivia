@@ -192,13 +192,15 @@
   // Show the first slide
   showSlide(currentSlide);
 
+  //On mobile event listeners
+  if (screen.width <= 480) {
+    submitButton.addEventListener("touchstart", showResults);
+    previousButton.addEventListener("touchstart", showPreviousSlide);
+    nextButton.addEventListener("touchstart", showNextSlide);
+  }
+
   // Event listeners
   submitButton.addEventListener("click", showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
-
-  //On mobile
-  submitButton.addEventListener("touchstart", showResults);
-  previousButton.addEventListener("touchstart", showPreviousSlide);
-  nextButton.addEventListener("touchstart", showNextSlide);
 })();
