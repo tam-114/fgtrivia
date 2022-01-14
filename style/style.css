@@ -1,14 +1,6 @@
 /*imports normalize.css file*/
 /*@import "normalize.css";*/
 
-/*see line 15 in index.html for class in use*/
-.logo-img {
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-  	padding-top: 15px;
-  	width: 75%;
-}
 
 /*font-face for: Contemporary Brush font in use*/
 @font-face {
@@ -25,6 +17,10 @@
 body {
 	background-color: #ffb366; /*light orange bg*/
 	font-family: "Contemporary Brush"; /*see line 14 in style.css for src*/
+}
+
+.fg-title {
+	width: auto;
 }
 
  /*Small devices (portrait tablets and large phones, 600px and up) */
